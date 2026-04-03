@@ -7,6 +7,13 @@ private:
     double salary;
 
 public:
+Teacher(string n, string d, string s, double sal){
+    name = n;
+    dept = d;
+    subject = s;
+salary = sal;
+
+}
     string name;
     string dept;
     string subject;
@@ -31,11 +38,7 @@ class Student{
 };
 
 int main(){
-    Teacher t1;
-    t1.name = "Pranav";
-    t1.subject = "C++";
-    t1.dept = "Computer Science";
-    t1.setSalary(50000);
+    Teacher t1("pranav", "CSE", "DSA", 50000);
 
     cout << t1.name << endl;
     cout << t1.getSalary() << endl;

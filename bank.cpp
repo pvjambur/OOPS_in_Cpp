@@ -10,6 +10,7 @@ private:
     double balance; //data hiding
 
 public:
+//non parameterized constructor
 Account(){
     cout << "Hi, I am bank" << endl;
     accountid = "1234";
